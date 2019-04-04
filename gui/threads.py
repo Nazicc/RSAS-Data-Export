@@ -308,7 +308,7 @@ class WorkThread(QThread):
                             cell.border = border
                             cell.alignment = alignment
                     
-                ws.delete_cols(len_excel,len(letter))
+                ws.delete_cols(len_excel,len(letter)+11111)
                 wb.save(self.folder_end+'/汇总-漏洞跟踪表/高中风险漏洞跟踪表--汇总.xlsx')
                 del vul_all_list[:]
                 vul_all_detail.clear()
